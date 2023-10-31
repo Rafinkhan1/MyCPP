@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double sum=0,ans = 0;
+        int i;
+        double[] number = new double[100];
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+ 
+ 
+        for (i = 0; i <n; i++) {
+            number[i] = input.nextInt();
+            if(number[i]<=100){
+                number[i]=number[i]/100;
+                sum=sum+number[i];
+                ans=(sum/n)*100;
+            }
+ 
+        }
+        System.out.println(ans);
+ 
+    }
+}
